@@ -68,6 +68,22 @@ class App extends Component {
                 description="description"
                 id="Tile1"
                 />
+                 <Tile
+                title="Natural Science Gymnasium"
+                place="Hersby"
+                date="Aug 2011 - May 2014"
+                location="Stockholm"
+                description="description"
+                id="Tile2"
+                />
+                 <Tile
+                title="High School"
+                place="Tamalpais"
+                date="Aug 2010 - May 2011"
+                location="San Francisco"
+                description="description"
+                id="Tile3"
+                />
               </div>
               <div>
                 <h2>Career</h2>
@@ -78,8 +94,17 @@ class App extends Component {
                 date="Aug 2014 - Current"
                 location="Karlsborg"
                 description="description"
-                id="Tile2"
+                id="Tile4"
                 />
+                <Tile
+                title="Head IT-educator"
+                place="CGI"
+                date="June 2011 - May 2020"
+                location="Stockholm"
+                description="description"
+                id="Tile5"
+                />
+      
              </div>
 
           }
