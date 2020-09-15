@@ -51,7 +51,7 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Education
+                Abilities
               </Link>
             </li>
             <li className="nav-item">

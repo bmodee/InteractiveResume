@@ -55,6 +55,51 @@
   padding: 40px;
 }
 
+.tile-content {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.tile-content > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.title {
+  grid-row: 1/1;
+}
+
+.place {
+  grid-row: 1/2
+;
+}
+.date {
+  grid-row: 2/2;
+}
+
+.location {
+  grid-row: 3/3;
+
+  
+}
+
+.description {
+  grid-row: 2/4;
+
+}
+
+.Profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 .Picture > img {
   display: flex;
   justify-content: space-between;
@@ -64,10 +109,21 @@
   border-radius: 40%;
 }
 
+.About{
+  margin-right: 2rem;
+  max-width: 300px;
+}
+
+.Details{
+  margin-left: 2rem;
+  max-width: 300px;
+}
+
 .contactInfo{
   display: flex;
   float: left;
   justify-content: space-between;
+  margin-bottom: 500px;
 
 }
 
@@ -76,8 +132,8 @@
   float: right;
   justify-content: space-between;
   align-items: center;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 50px;
+  max-height: 50px;
   border-radius: 0%;
 }
 
@@ -86,8 +142,8 @@
   float: right;
   justify-content: space-between;
   align-items: center;
-  max-width: 110px;
-  max-height: 110px;
+  max-width: 50px;
+  max-height: 50px;
   border-radius: 0%;
 }
 
@@ -96,7 +152,7 @@
   float: right;
   justify-content: space-between;
   align-items: center;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 50px;
+  max-height: 50px;
   border-radius: 0%;
 }

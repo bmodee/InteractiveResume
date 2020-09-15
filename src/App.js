@@ -8,6 +8,7 @@ import FacebookPicture from "./images/FacebookColor.png"
 import GitlabPicture from "./images/GitlabColor.png"
 import InstagramPicture from "./images/InstagramColor.png"
 import { Link } from "react-router-dom";
+import Tile from "./Components/Tile";
 
 class App extends Component {
   render() {
@@ -19,8 +20,26 @@ class App extends Component {
         <Section
           title="Profile"
           subtitle={
-            <div className ="Picture">
-              <img src={profilepicture} alt='pp'/>
+            <div className ="Profile">
+              <div className ="About">
+                <h3>About</h3>
+                <p>Jag är en målinriktad och social person som drivs av utmaningar. 
+                  Genom att kombinera min karriär inom Försvarsmakten, som gruppchef 
+                  för jägarsoldater på K3, med studier inom datateknik på Linköpings 
+                  universitet har jag utvecklat ett stort intresse för programmering 
+                  och samtidigt stärkt mina ledarskap- och samarbetsförmågor</p>
+              </div>
+
+              <div className ="Picture">
+                <img src={profilepicture} alt='pp'/>
+              </div>
+
+              <div className ="Details">
+                <h3>Details</h3>
+                <p>Name: Björn Modée</p>
+                <p>Age: 26</p>
+                <p>Location: Linköping, Sweden</p>
+              </div>
             </div>
           }
           dark={true}
@@ -33,16 +52,59 @@ class App extends Component {
 
         <Section
           title="Experience"
-          subtitle={dummyText}
           dark={false}
           id="section2"
+          subtitle={
+            <div>
+              <div>
+                <h2>Education</h2>
+              </div>
+              <div>
+                <Tile
+                title="M.Sc. Computer science and Engineering"
+                place="Linköping University"
+                date="Aug 2016 - Current"
+                location="Linköping"
+                description="description"
+                id="Tile1"
+                />
+              </div>
+              <div>
+                <h2>Career</h2>
+              </div>
+              <Tile
+                title="Försvarsmakten"
+                place="K3"
+                date="Aug 2014 - Current"
+                location="Karlsborg"
+                description="description"
+                id="Tile2"
+                />
+             </div>
+
+          }
+         
         />
         
         <Section
-          title="Education"
-          subtitle={dummyText}
+          title="Abilities"
           dark={true}
           id="section3"
+          subtitle={
+            <div className ="">
+                <div className ="Skills">
+                <p>Skills</p>
+                </div>
+               
+                <div className ="Tools">
+                <p>Tools</p>
+                </div>
+
+                <div className ="Language">
+                <p>Language</p>
+                </div>
+            </div>
+          }
         />
         <Section
           title="Contact"
