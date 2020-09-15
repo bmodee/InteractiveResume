@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import Section from "./Components/Section";
 import dummyText from "./DummyText";
+//import profilepicture from ./images/profilepicture.jpg
 class App extends Component {
   render() {
     return (
