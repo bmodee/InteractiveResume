@@ -18,10 +18,12 @@ export default function Tile({ title, place, date, description, location, locati
         </div>
 
         <div className="location">
-        <a href={locationlink}>
-                <img src={LocationPicture} alt='lp' width="50" height="50"/>
-                <p>{location}</p>
-            </a>
+        <div className="locationtag">
+           
+          </div>
+        
+                
+            
         </div>
 
         <div className="description">
@@ -33,3 +35,6 @@ export default function Tile({ title, place, date, description, location, locati
   );
 }
 
+/*<a href={locationlink}>
+<img src={LocationPicture} alt='lp' width="30" height="30"/><p>{location}</p>
+</a>*/

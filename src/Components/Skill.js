@@ -9,6 +9,7 @@ export default function Skill({ name, proficiency, id }) {
         </div>
 
         <div className="proficiency">
+            
             <p>{proficiency}</p>
         </div>
 

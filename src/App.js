@@ -11,6 +11,7 @@ import GitlabPicture from "./images/GitlabColor.png"
 import InstagramPicture from "./images/InstagramColor.png"
 import LinkedinPicture from "./images/LinkedinColor.png"
 import EmailPicture from "./images/EmailColor.png"
+import LocationPicture from "./images/LocationColor.png"
 import { Link } from "react-router-dom";
 
 
@@ -41,9 +42,15 @@ class App extends Component {
 
               <div className ="Details">
                 <h3>Details</h3>
-                <p>Name: Björn Modée</p>
-                <p>Age: 26</p>
-                <p>Location: Linköping, Sweden</p>
+                <h4>Name:</h4>
+                <p>Björn Modée</p>
+                <h4>Age:</h4>
+                <p>26 years old</p>
+
+                <h4>Location:</h4>
+                <p>
+                <img src={LocationPicture} alt='lp' width="30" height="30"/>
+                Linköping, Sweden, Earth</p>
               </div>
             </div>
           }
@@ -131,9 +138,10 @@ class App extends Component {
           dark={true}
           id="section3"
           subtitle={
-            <div className ="">
-                <div className ="Skills">
-                <h2>Skills</h2>
+            <div className ="skills">
+              <h2>Skills</h2>
+                <div className ="skill-content">
+                
                   <div>
                     <Skill
                     name="React"
@@ -200,6 +208,14 @@ class App extends Component {
                     />
                     <Skill
                     name="MacOS"
+                    proficiency="2/10"
+                    />
+                    <Skill
+                    name="Atom"
+                    proficiency="2/10"
+                    />
+                    <Skill
+                    name="Visual Studio"
                     proficiency="2/10"
                     />
                 </div>

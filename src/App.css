@@ -57,15 +57,16 @@
 
 .tile-content {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  background-color: #2196F3;
+  align-items: center;
+  grid-template-columns: 49% 49%;
+  grid-gap: 5px;
+  /*background-color: #2196F3;*/
   padding: 10px;
 }
 
 .tile-content > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  text-align: left;
   padding: 1 0px 0;
   font-size: 14px;
 }
@@ -76,6 +77,16 @@
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
+}
+
+.skill{
+  background-color: lightslategray;
+  grid-row: 1/1;
+}
+
+.proficiency{
+  background-color: lightcoral;
+  grid-row: 1/2;
 }
 
 .title {
@@ -92,9 +103,16 @@
 
 .location {
   grid-row: 3/3;
-
-  
 }
+
+.locationtag {
+  text-align: center;
+  background-color: lawngreen;
+  grid-row: 3/4;
+}
+
+
+
 
 .description {
   grid-row: 2/4;
