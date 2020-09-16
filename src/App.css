@@ -66,8 +66,16 @@
 .tile-content > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px 0;
+  padding: 1 0px 0;
   font-size: 14px;
+}
+
+.skill-content {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
 }
 
 .title {
@@ -119,40 +127,67 @@
   max-width: 300px;
 }
 
+.education{
+  margin-top: 2rem;
+}
+
+.career{
+  margin-top: 2rem;
+}
+
 .contactInfo{
   display: flex;
-  float: left;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 500px;
+  margin-top: 50px;
+  margin-right: 8rem;
+  margin-left: 8rem;
 
 }
 
-.FacebookPicture > img {
+.FacebookPicture{
   display: flex;
-  float: right;
+
   justify-content: space-between;
   align-items: center;
-  max-width: 50px;
-  max-height: 50px;
-  border-radius: 0%;
+  padding: 10px;
+
+
 }
 
-.GitlabPicture > img {
+.GitlabPicture{
   display: flex;
-  float: right;
+
   justify-content: space-between;
   align-items: center;
-  max-width: 50px;
-  max-height: 50px;
-  border-radius: 0%;
+  padding: 10px;
+
+
 }
 
-.InstagramPicture > img {
+.InstagramPicture {
   display: flex;
-  float: right;
+
   justify-content: space-between;
   align-items: center;
-  max-width: 50px;
-  max-height: 50px;
-  border-radius: 0%;
+  padding: 10px;
+}
+
+.LinkedinPicture {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.EmailPicture {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+
 }

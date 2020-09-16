@@ -1,6 +1,7 @@
 import React from "react";
+import LocationPicture from "../images/LocationColor.png"
 
-export default function Tile({ title, place, date, description, location, id }) {
+export default function Tile({ title, place, date, description, location, locationlink, id }) {
   return (
     <div className={Tile}>
       <div className="tile-content" id={id}>
@@ -17,7 +18,10 @@ export default function Tile({ title, place, date, description, location, id }) 
         </div>
 
         <div className="location">
-            <p>{location}</p>
+        <a href={locationlink}>
+                <img src={LocationPicture} alt='lp' width="50" height="50"/>
+                <p>{location}</p>
+            </a>
         </div>
 
         <div className="description">
