@@ -12,8 +12,10 @@ import InstagramPicture from "./images/InstagramColor.png"
 import LinkedinPicture from "./images/LinkedinColor.png"
 import EmailPicture from "./images/EmailColor.png"
 import LocationPicture from "./images/LocationColor.png"
-import { Link } from "react-router-dom";
+import bear from "./images/coffebear.jpg"
 
+
+import ImageFadeIn from "react-image-fade-in";
 
 
 class App extends Component {
@@ -21,7 +23,12 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
+        <div className="front">
+            <div className="front-picture">
+              <ImageFadeIn src={bear} alt='pp' opacityTransition="3.5"/>
+            </div>
 
+            </div>
 
         <Section
           title="Profile"
@@ -37,7 +44,7 @@ class App extends Component {
               </div>
 
               <div className ="Picture">
-                <img src={profilepicture} alt='pp'/>
+                <ImageFadeIn src={profilepicture} alt='pp' opacityTransition="0"/>
               </div>
 
               <div className ="Details">
@@ -80,7 +87,7 @@ class App extends Component {
                 location="Linköping"
                 locationlink="https://goo.gl/maps/jKNqbAFeADAvMXfWA"
                 description="I am currently studying at Linköping University which provides challenging 
-                problems that needs to be solved with hardwork an teamwork"
+                problems that needs to be solved with hardwork and team work"
                 id="Tile1"
                 />
                  <Tile
@@ -107,7 +114,7 @@ class App extends Component {
               <div className="career">
               <Tile
                 title="Försvarsmakten"
-                place="K3"
+                place="K3, Karlsborg"
                 date="Aug 2014 - Current"
                 location="Karlsborg"
                 description="I joined the Swedish Army Rangers after my gymnasium education. My role as a squad leader
@@ -139,104 +146,115 @@ class App extends Component {
           id="section3"
           subtitle={
             <div className ="skills">
+              <div className="quote"> 
+                  <p>“I am still learning.” — Michelangelo</p>
+              </div>
+              
               <h2>Skills</h2>
-                <div className ="skill-content">
-                
+              <hr width="100%"/>
+                <div className ="skill-content-app">
+                <div className ="">
                   <div>
                     <Skill
                     name="React"
-                    proficiency="2/10"
+                    proficiency="7"
                     />
                     <Skill
                     name="Redux"
-                    proficiency="2/10"
+                    proficiency="7"
                     />
                     <Skill
                     name="Java"
-                    proficiency="2/10"
+                    proficiency="7"
                     />
                     <Skill
                     name="HTML/CSS"
-                    proficiency="2/10"
+                    proficiency="8"
                     />
                      <Skill
                     name="Speech"
-                    proficiency="2/10"
+                    proficiency="7"
                     />
                      <Skill
                     name="Leadership"
-                    proficiency="2/10"
+                    proficiency="8"
                     />
                      <Skill
                     name="C++"
-                    proficiency="2/10"
+                    proficiency="5"
                     />
                      <Skill
                     name="Python"
-                    proficiency="2/10"
+                    proficiency="6"
                     />
                     <Skill
                     name="SQL"
-                    proficiency="2/10"
+                    proficiency="7"
                     />
                     <Skill
-                    name="Agile Project managemant"
-                    proficiency="2/10"
+                    name="Agile Project management"
+                    proficiency="5"
                     />
                       
-                    
+                      </div>
                   </div>
                 </div>
                
                 <div className ="Tools">
                 <h2>Tools</h2>
+                <hr width="100%"/>
+                <div className ="skill-content-app">
                 <Skill
                     name="Git"
-                    proficiency="7/10"
+                    proficiency="7"
                     />
                      <Skill
                     name="Microsoft Office"
-                    proficiency="8/10"
+                    proficiency="9"
                     />
                      <Skill
                     name="Windows"
-                    proficiency="2/10"
+                    proficiency="9"
                     />
                     <Skill
                     name="Linux"
-                    proficiency="2/10"
+                    proficiency="8"
                     />
                     <Skill
                     name="MacOS"
-                    proficiency="2/10"
+                    proficiency="9"
                     />
                     <Skill
                     name="Atom"
-                    proficiency="2/10"
+                    proficiency="7"
                     />
                     <Skill
                     name="Visual Studio"
-                    proficiency="2/10"
+                    proficiency="7"
                     />
                 </div>
-
+                </div>
 
                 <div className ="Language">
                 <h2>Language</h2>
+                <hr width="100%"/>
+                <div className ="skill-content-app">
                 <Skill
                     name="Swedish"
-                    proficiency="10/10"
+                    proficiency="10"
                     />
                      <Skill
                     name="English"
-                    proficiency="9/10"
+                    proficiency="9"
                     />
                      <Skill
                     name="Spanish"
-                    proficiency="2/10"
+                    proficiency="2"
                     />
                 </div>
             </div>
+            </div>
+            
           }
         />
         <Section

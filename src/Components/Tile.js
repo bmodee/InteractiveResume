@@ -1,5 +1,5 @@
 import React from "react";
-import LocationPicture from "../images/LocationColor.png"
+
 
 export default function Tile({ title, place, date, description, location, locationlink, id }) {
   return (

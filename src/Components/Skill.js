@@ -1,4 +1,6 @@
 import React from "react";
+import Rater from 'react-rater'
+import 'react-rater/lib/react-rater.css'
 
 export default function Skill({ name, proficiency, id }) {
   return (
@@ -9,8 +11,8 @@ export default function Skill({ name, proficiency, id }) {
         </div>
 
         <div className="proficiency">
-            
-            <p>{proficiency}</p>
+           <Rater rating={proficiency} total={10} interactive={false} />
+
         </div>
 
       </div>
