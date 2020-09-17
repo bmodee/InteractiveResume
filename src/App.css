@@ -1,3 +1,6 @@
+
+
+
 :root {
   --off-white: #fafafa;
 }
@@ -53,4 +56,195 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
+}
+
+.front{
+  background-color: #fafafa;  
+  height: 80vh;
+  padding-top: 20vh;
+}
+
+.front-picture{
+  text-align: center;
+
+
+
+
+}
+
+
+.tile-content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 49% 49%;
+  grid-gap: 5px;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+}
+
+.tile-content > div {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  text-align: left;
+  padding: 1 0px 0;
+  font-size: 14px;
+}
+
+
+
+.skill-content-app{
+  /*background-color: peachpuff;*/
+}
+
+
+.skill-content {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  grid-gap: 5px;
+  /*background-color: green;*/
+  padding: 10px;
+}
+
+.skill{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  /*background-color: lightslategray;*/
+}
+
+.proficiency{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  flex-basis: 50%;
+ /* background-color: lightcoral;*/
+
+}
+
+.quote{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.title {
+  grid-row: 1/1;
+}
+
+.place {
+  grid-row: 1/2
+;
+}
+.date {
+  grid-row: 2/2;
+}
+
+.location {
+  grid-row: 3/3;
+}
+
+.locationtag {
+  text-align: center;
+  /*background-color: lawngreen;*/
+  grid-row: 3/4;
+}
+
+
+
+
+.description {
+  grid-row: 2/4;
+
+}
+
+.Profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.Picture > img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 40%;
+}
+
+.About{
+  margin-right: 2rem;
+  max-width: 300px;
+}
+
+.Details{
+  margin-left: 2rem;
+  max-width: 300px;
+}
+
+.education{
+  margin-top: 2rem;
+}
+
+.career{
+  margin-top: 2rem;
+}
+
+.contactInfo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 50%;
+
+}
+
+.FacebookPicture{
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+
+}
+
+.GitlabPicture{
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+
+}
+
+.InstagramPicture {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.LinkedinPicture {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.EmailPicture {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+
 }
