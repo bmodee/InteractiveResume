@@ -86,7 +86,7 @@ class App extends Component {
                 location="Linköping"
                 locationlink="https://goo.gl/maps/jKNqbAFeADAvMXfWA"
                 description="I am currently studying at Linköping University which provides challenging 
-                problems that needs to be solved with hardwork and team work"
+                problems that needs to be solved with hard work and collaboration"
                 id="Tile1"
                 />
                  <Tile
@@ -102,7 +102,7 @@ class App extends Component {
                 place="Tamalpais"
                 date="Aug 2010 - May 2011"
                 location="San Francisco"
-                description="I spent one year in Highschool in United States of America. This was an amazing experience and widened my field of view"
+                description="I spent one year in Highschool in United States of America. This was an amazing experience and it widened my field of view of life"
                 id="Tile3"
                 />
               </div>
@@ -258,6 +258,8 @@ class App extends Component {
         />
         <Section
           title="Contact"
+          dark={false}
+          id="section4"
           subtitle={ 
             <div className ="Contact" class="row">
               <hr width="100%"/>
@@ -292,13 +294,16 @@ class App extends Component {
                   <img src={LinkedinPicture} alt='lp' width="50" height="50"/>
                 </a>
               </div>
+             
+              
+              </div>
+              <div className="InteractiveResume">
+                <p>This interactive resume was built by me in React</p>
               </div>
           </div>
+          
           }
-          dark={false}
-          id="section4"
         />
-        
       </div>
     );
   }
