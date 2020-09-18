@@ -23,12 +23,9 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <div className="front">
-            <div className="front-picture">
-              <ImageFadeIn src={bear} alt='pp' opacityTransition="3.5"/>
-            </div>
 
-            </div>
+
+
 
         <Section
           title="Profile"
@@ -36,11 +33,11 @@ class App extends Component {
             <div className ="Profile">
               <div className ="About">
                 <h3>About</h3>
-                <p>Jag är en målinriktad och social person som drivs av utmaningar. 
-                  Genom att kombinera min karriär inom Försvarsmakten, som gruppchef 
-                  för jägarsoldater på K3, med studier inom datateknik på Linköpings 
-                  universitet har jag utvecklat ett stort intresse för programmering 
-                  och samtidigt stärkt mina ledarskap- och samarbetsförmågor</p>
+                <p>
+                  I am a goal-oriented and social person who is driven by challenges. 
+                  By combining my career in the Swedish Armed Forces, as a squad leader at K3, with studies in computer science
+                  at Linköping University, I have developed a great interest in programming and at the same time strengthened my
+                  leadership and teamwork skills</p>
               </div>
 
               <div className ="Picture">
@@ -56,7 +53,9 @@ class App extends Component {
 
                 <h4>Location:</h4>
                 <p>
+                  <a href="https://goo.gl/maps/AUoQmGcehUtfftFm8">
                 <img src={LocationPicture} alt='lp' width="30" height="30"/>
+                  </a>
                 Linköping, Sweden, Earth</p>
               </div>
             </div>
