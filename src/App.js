@@ -12,7 +12,7 @@ import InstagramPicture from "./images/InstagramColor.png"
 import LinkedinPicture from "./images/LinkedinColor.png"
 import EmailPicture from "./images/EmailColor.png"
 import LocationPicture from "./images/LocationColor.png"
-import bear from "./images/coffebear.jpg"
+//import bear from "./images/coffebear.jpg"
 
 
 import ImageFadeIn from "react-image-fade-in";
