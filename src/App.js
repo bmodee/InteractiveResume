@@ -41,7 +41,7 @@ class App extends Component {
               </div>
 
               <div className ="Picture">
-                <ImageFadeIn src={profilepicture} alt='pp' opacityTransition="0"/>
+                <ImageFadeIn src={profilepicture} alt='pp' opacityTransition="3"/>
               </div>
 
               <div className ="Details">
