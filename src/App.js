@@ -4,6 +4,12 @@ import Navbar from "./Components/Navbar";
 import Section from "./Components/Section";
 import Tile from "./Components/Tile";
 import Skill from "./Components/Skill";
+import Robot from "./Components/Robot";
+import Tek from "./Components/Tek";
+import Cibus from "./Components/Cibus";
+
+
+import Elin from "./Components/Elin";
 
 import profilepicture from "./images/profilepicture.jpg"
 import FacebookPicture from "./images/FacebookColor.png"
@@ -23,9 +29,6 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-
-
-
 
         <Section
           title="Profile"
@@ -61,12 +64,8 @@ class App extends Component {
             </div>
           }
           dark={true}
-          id="section1"
-          
+          id="section1" 
         />
-
-      
-
 
         <Section
           title="Experience"
@@ -136,13 +135,48 @@ class App extends Component {
              </div>
 
           }
-         
         />
         
         <Section
-          title="Abilities"
+          title="Projects"
           dark={true}
           id="section3"
+          subtitle={<div>
+            <div>
+              <h2>Autonomus robot</h2>
+              <hr width="100%"/>
+              <Robot/>
+            </div>
+            <div>
+              <h2>Cibus</h2>
+              <hr width="100%"/>
+              <Cibus/>
+            </div>
+            <div>
+              <h2>Teknikåttan</h2>
+              <hr width="100%"/>
+              <Tek/>
+            </div>
+            </div>}
+          />
+
+        <Section
+          title="Inspiration"
+          dark={false}
+          id="section4"
+          subtitle={<div>
+            <div>
+              <h2>Elin Bäcklund</h2>
+              <hr width="100%"/>
+              <Elin/>
+            </div>
+            </div>}
+          />
+
+        <Section
+          title="Abilities"
+          dark={true}
+          id="section5"
           subtitle={
             <div className ="skills">
               <div className="quote"> 
@@ -164,23 +198,27 @@ class App extends Component {
                     />
                     <Skill
                     name="Java"
-                    proficiency="7"
+                    proficiency="6"
                     />
                     <Skill
-                    name="HTML/CSS"
-                    proficiency="8"
-                    />
-                     <Skill
-                    name="Speech"
+                    name="HTML"
                     proficiency="7"
                     />
                      <Skill
-                    name="Leadership"
-                    proficiency="8"
+                    name="CSS"
+                    proficiency="7"
                     />
                      <Skill
                     name="C++"
                     proficiency="5"
+                    />
+                    <Skill
+                    name="C#"
+                    proficiency="2"
+                    />
+                    <Skill
+                    name="C"
+                    proficiency="2"
                     />
                      <Skill
                     name="Python"
@@ -188,14 +226,53 @@ class App extends Component {
                     />
                     <Skill
                     name="SQL"
-                    proficiency="7"
+                    proficiency="6"
                     />
                     <Skill
+                    name="Matlab"
+                    proficiency="1"
+                    />
+                   
+                      
+                      </div>
+                  </div>
+                </div>
+
+                <h2>Soft Skills</h2>
+              <hr width="100%"/>
+                <div className ="skill-content-app">
+                  <div className ="">
+                    <div>
+                    <Skill
+                    name="Teamwork"
+                    proficiency="10"
+                    />
+                    <Skill
+                    name="Leadership"
+                    proficiency="8"
+                    />
+                     <Skill
+                    name="Speech"
+                    proficiency="7"
+                    />
+                     <Skill
                     name="Agile Project management"
                     proficiency="5"
                     />
-                      
-                      </div>
+                    <Skill
+                    name="Software Quality Assurance"
+                    proficiency="7"
+                    />
+                     <Skill
+                    name="Testing"
+                    proficiency="4"
+                    />
+                     <Skill
+                    name="UX-design"
+                    proficiency="6"
+                    />
+
+                    </div>
                   </div>
                 </div>
                
@@ -205,7 +282,7 @@ class App extends Component {
                 <div className ="skill-content-app">
                 <Skill
                     name="Git"
-                    proficiency="7"
+                    proficiency="8"
                     />
                      <Skill
                     name="Microsoft Office"
@@ -256,10 +333,11 @@ class App extends Component {
             
           }
         />
+
         <Section
           title="Contact"
           dark={false}
-          id="section4"
+          id="section6"
           subtitle={ 
             <div className ="Contact" class="row">
               <hr width="100%"/>
