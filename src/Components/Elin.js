@@ -13,9 +13,10 @@ export default function Elin() {
         </div>
         <div className ="projectdescrition">
           <p1>
-          We developed a website for sharing recepies online for the "Advanced webprogramming" course. 
-          We decided to create the website with React + Redux for the frontend. For the backend we used Flask with a database in SQL.
-          We also used Facebook API to handle the login functionality.
+          I am truly blessed to have Elin as my Mentor and friend. After graduating her M.Sc. program in Applied Physics she took the tech industry with storm
+          as she became the IT-girl of the year in 2016, got written about in Forbes magazine and became Senior Full Stack Engineer & Motherbrain Lead at EQT.
+          This incredible feat combined with her great kindness and decisiveness makes her an amazing mentor who I can ask about everything from code related 
+          problems to career decisions
           </p1>
           <h3>Links</h3>
           <div className="links1">
